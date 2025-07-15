@@ -160,6 +160,7 @@ export const DATA = {
     title: string;
     href: string;
     dates: string;
+    location: string;
     active: boolean;
     description: string;
     technologies: string[];
