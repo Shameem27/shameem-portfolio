@@ -109,7 +109,7 @@ export const DATA = {
       description:
         "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
       technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
-      links: [],
+      links: [] as { icon: React.ReactNode; title: string; href: string }[],
     },
     {
       title: "Hotel Management System",
@@ -119,7 +119,7 @@ export const DATA = {
       description:
         "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
       technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
-      links: [],
+      links: [] as { icon: React.ReactNode; title: string; href: string }[],
     },
     {
       title: "StockPulse – AI Investment Dashboard",
@@ -129,7 +129,7 @@ export const DATA = {
       description:
         "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
       technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
-      links: [],
+      links: [] as { icon: React.ReactNode; title: string; href: string }[],
     }
   ],
 
