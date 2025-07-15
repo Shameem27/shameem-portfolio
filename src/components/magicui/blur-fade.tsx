@@ -14,7 +14,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string; // still in props, but not used in useInView
+  inViewMargin?: string;
   blur?: string;
 }
 
@@ -26,11 +26,16 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px", // kept in props if needed later
+  inViewMargin = "-50px",
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true }); // ✅ FIXED HERE
+
+  const inViewResult = useInView(ref, {
+    once: true,
+    margin: inViewMargin as any, // TypeScript fix
+  });
+
   const isInView = !inView || inViewResult;
 
   const defaultVariants: Variants = {
