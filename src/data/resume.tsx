@@ -97,47 +97,51 @@ export const DATA = {
   ],
 
   projects: [
-    {
-      title: "WealthBridge – Investment Management Website",
-      href: "#",
-      dates: "Nov 2024",
-      active: true,
-      description: "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
-      technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
-      image: "",
-      video: "",
-      links: [
-        { icon: Icons.github, title: "GitHub", href: "#" },
-        { icon: Icons.link, title: "Live Demo", href: "#" },
-      ],
-    },
-    {
-      title: "Hotel Management System",
-      href: "#",
-      dates: "May 2024",
-      active: true,
-      description: "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
-      technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
-      image: "",
-      video: "",
-      links: [
-        { icon: Icons.github, title: "GitHub", href: "#" },
-      ],
-    },
-    {
-      title: "StockPulse – AI Investment Dashboard",
-      href: "#",
-      dates: "Feb 2024",
-      active: true,
-      description: "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
-      technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
-      image: "",
-      video: "",
-      links: [
-        { icon: Icons.github, title: "GitHub", href: "#" },
-      ],
-    },
-  ],
+  {
+    title: "WealthBridge – Investment Management Website",
+    href: "#",
+    dates: "Nov 2024",
+    active: true,
+    description:
+      "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
+    technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
+    image: "",
+    video: "",
+    links: [
+      { icon: Icons.github, type: "GitHub", href: "#" },
+      { icon: Icons.link, type: "Live Demo", href: "#" },
+    ],
+  },
+  {
+    title: "Hotel Management System",
+    href: "#",
+    dates: "May 2024",
+    active: true,
+    description:
+      "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
+    technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
+    image: "",
+    video: "",
+    links: [
+      { icon: Icons.github, type: "GitHub", href: "#" },
+    ],
+  },
+  {
+    title: "StockPulse – AI Investment Dashboard",
+    href: "#",
+    dates: "Feb 2024",
+    active: true,
+    description:
+      "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
+    technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
+    image: "",
+    video: "",
+    links: [
+      { icon: Icons.github, type: "GitHub", href: "#" },
+    ],
+  },
+],
+
 
   certifications: [
     "AWS Cloud Practitioner – Amazon",
