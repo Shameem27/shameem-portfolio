@@ -156,6 +156,16 @@ export const DATA = {
     "Led cultural and technical exchange programs in college"
   ],
 
-  hackathons: [], // Add if needed
+  hackathons: [] as {
+    title: string;
+    href: string;
+    dates: string;
+    active: boolean;
+    description: string;
+    technologies: string[];
+    image: string;
+    video: string;
+    links: string[];
+  }[], // Add if needed
 
 } as const;
