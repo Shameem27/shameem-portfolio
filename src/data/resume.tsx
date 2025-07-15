@@ -7,8 +7,10 @@ export const DATA = {
   url: "https://shameem.vercel.app",
   location: "Chennai, Tamil Nadu",
   locationLink: "https://www.google.com/maps/place/Chennai,+Tamil+Nadu",
-  description: "Final-year Computer Science student | Full Stack Developer | Problem Solver",
-  summary: "I am a final-year Computer Science Engineering student at Chennai Institute of Technology with hands-on experience in building full-stack applications, solving 750+ LeetCode problems, and leading technical communities. I’ve completed multiple internships, built production-ready projects, and earned certifications from AWS, IBM, Cisco, and more.",
+  description:
+    "Final-year Computer Science student | Full Stack Developer | Problem Solver",
+  summary:
+    "I am a final-year Computer Science Engineering student at Chennai Institute of Technology with hands-on experience in building full-stack applications, solving 750+ LeetCode problems, and leading technical communities. I’ve completed multiple internships, built production-ready projects, and earned certifications from AWS, IBM, Cisco, and more.",
   avatarUrl: "/me.png",
 
   skills: [
@@ -70,7 +72,8 @@ export const DATA = {
       logoUrl: "/kkr.png",
       href: "#",
       badges: ["Internship"],
-      description: "Built ERP applications using React.js and Node.js to enhance business process efficiency by 15%. Developed a Retail Store Management System and collaborated in Agile sprints with functional database integrations.",
+      description:
+        "Built ERP applications using React.js and Node.js to enhance business process efficiency by 15%. Developed a Retail Store Management System and collaborated in Agile sprints with functional database integrations.",
     },
     {
       company: "DLK Technologies Pvt Ltd",
@@ -81,7 +84,8 @@ export const DATA = {
       logoUrl: "/dlk.png",
       href: "#",
       badges: ["Internship"],
-      description: "Developed Java features, integrated RESTful APIs, improved performance by 25%, and reduced bugs by 20%. Gained experience in Spring, Hibernate, MySQL, and Agile practices.",
+      description:
+        "Developed Java features, integrated RESTful APIs, improved performance by 25%, and reduced bugs by 20%. Gained experience in Spring, Hibernate, MySQL, and Agile practices.",
     },
   ],
 
@@ -97,51 +101,52 @@ export const DATA = {
   ],
 
   projects: [
-  {
-    title: "WealthBridge – Investment Management Website",
-    href: "#",
-    dates: "Nov 2024",
-    active: true,
-    description:
-      "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
-    technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
-    image: "",
-    video: "",
-    links: [
-      { icon: Icons.github, type: "GitHub", href: "#" },
-      { icon: Icons.link, type: "Live Demo", href: "#" },
-    ],
-  },
-  {
-    title: "Hotel Management System",
-    href: "#",
-    dates: "May 2024",
-    active: true,
-    description:
-      "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
-    technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
-    image: "",
-    video: "",
-    links: [
-      { icon: Icons.github, type: "GitHub", href: "#" },
-    ],
-  },
-  {
-    title: "StockPulse – AI Investment Dashboard",
-    href: "#",
-    dates: "Feb 2024",
-    active: true,
-    description:
-      "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
-    technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
-    image: "",
-    video: "",
-    links: [
-      { icon: Icons.github, type: "GitHub", href: "#" },
-    ],
-  },
-],
-
+    {
+      title: "WealthBridge – Investment Management Website",
+      href: "#",
+      dates: "Nov 2024",
+      active: true,
+      description:
+        "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
+      technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
+      image: "",
+      video: "",
+      links: [
+        { icon: Icons.github, type: "GitHub", href: "#" },
+        { icon: Icons.link, type: "Live Demo", href: "#" }
+      ],
+    },
+    {
+      title: "Hotel Management System",
+      href: "#",
+      dates: "May 2024",
+      active: true,
+      description:
+        "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
+      technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
+      image: "",
+      video: "",
+      links: [
+        { icon: Icons.github, type: "GitHub", href: "#" },
+        { icon: Icons.link, type: "Live Demo", href: "#" }
+      ],
+    },
+    {
+      title: "StockPulse – AI Investment Dashboard",
+      href: "#",
+      dates: "Feb 2024",
+      active: true,
+      description:
+        "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
+      technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
+      image: "",
+      video: "",
+      links: [
+        { icon: Icons.github, type: "GitHub", href: "#" },
+        { icon: Icons.link, type: "Live Demo", href: "#" }
+      ],
+    },
+  ],
 
   certifications: [
     "AWS Cloud Practitioner – Amazon",
@@ -171,7 +176,7 @@ export const DATA = {
     video: string;
     links: {
       icon: React.ReactNode;
-      title: string;
+      type: string;
       href: string;
     }[];
   }[],
