@@ -112,8 +112,8 @@ export const DATA = {
       image: "",
       video: "",
       links: [
-        { icon: Icons.github, type: "GitHub", href: "#" },
-        { icon: Icons.external, type: "Live Demo", href: "#" },
+        { icon: <Icons.github />, type: "GitHub", href: "#" },
+        { icon: <Icons.external />, type: "Live Demo", href: "#" },
       ],
     },
     {
@@ -127,7 +127,7 @@ export const DATA = {
       image: "",
       video: "",
       links: [
-        { icon: Icons.github, type: "GitHub", href: "#" },
+        { icon: <Icons.github />, type: "GitHub", href: "#" },
       ],
     },
     {
@@ -141,7 +141,7 @@ export const DATA = {
       image: "",
       video: "",
       links: [
-        { icon: Icons.github, type: "GitHub", href: "#" },
+        { icon: <Icons.github />, type: "GitHub", href: "#" },
       ],
     },
   ],
