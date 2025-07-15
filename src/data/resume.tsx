@@ -2,65 +2,60 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Shameem Mohamed",
+  name: "S Shameem Mohamed",
   initials: "S",
-  url: "https://shameem.vercel.app", // Change to your deployed portfolio domain
+  url: "https://shameem.vercel.app", // Replace with your custom domain later
   location: "Chennai, Tamil Nadu",
   locationLink: "https://www.google.com/maps/place/Chennai,+Tamil+Nadu",
   description:
-    "Aspiring Software Engineer passionate about building scalable full-stack applications and solving real-world problems.",
+    "Final-year Computer Science student | Full Stack Developer | Problem Solver",
   summary:
-    "I'm a final-year Computer Science student at Chennai Institute of Technology, specializing in full-stack development, object detection, and system design. With hands-on experience from multiple internships, personal projects, and over 750+ problems solved in competitive programming, I bring both depth and curiosity to everything I do. I'm currently seeking opportunities to apply my skills and grow as a developer.",
-  avatarUrl: "/me.png", // Place your own image in the public folder as "me.png"
+    "I am a final-year Computer Science Engineering student at Chennai Institute of Technology with hands-on experience in building full-stack applications, solving 750+ LeetCode problems, and leading technical communities. I’ve completed multiple internships, built production-ready projects, and earned certifications from AWS, IBM, Cisco, and more.",
+  avatarUrl: "/me.png",
 
   skills: [
-    "Java",
-    "Python",
-    "C++",
-    "C",
-    "SQL",
-    "React",
-    "Node.js",
-    "Express.js",
-    "MySQL",
-    "MongoDB",
-    "HTML",
-    "CSS",
-    "TailwindCSS",
-    "Git",
-    "Linux"
+    "Java", "Python", "C++", "JavaScript", "SQL",
+    "React.js", "Node.js", "Flask", "Tailwind CSS",
+    "PostgreSQL", "MySQL", "Docker", "Kubernetes",
+    "Firebase", "Git", "Power BI", "Excel", "Unix Shell"
   ],
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" }, // optional
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
 
   contact: {
-    email: "shameemmohamed04@gmail.com",
-    tel: "+91-XXXXXXXXXX",
+    email: "shameemmohamed111s@gmail.com",
+    tel: "+91 8778183065",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/shameem04",
+        url: "https://github.com/Shameem27",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/shameem04",
+        url: "https://www.linkedin.com/in/shameem-mohamed-s-681276236/",
         icon: Icons.linkedin,
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/shameem04",
+        url: "#",
         icon: Icons.x,
+        navbar: false,
+      },
+      LeetCode: {
+        name: "LeetCode",
+        url: "https://leetcode.com/u/Shameem_Mohamed_S/",
+        icon: Icons.leetcode,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "mailto:shameemmohamed04@gmail.com",
+        url: "mailto:shameemmohamed111s@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
@@ -69,101 +64,88 @@ export const DATA = {
 
   work: [
     {
-      company: "DLK Technologies",
-      href: "https://www.dlkcareerdevelopment.in/",
-      badges: ["Internship"],
+      company: "KKR Robotics and Technology",
+      title: "Web Development Intern",
       location: "Chennai",
-      title: "Java Developer Intern",
-      logoUrl: "/dlk.png", // Add your logo in public
-      start: "June 2023",
-      end: "July 2023",
+      start: "May 2024",
+      end: "June 2024",
+      logoUrl: "/kkr.png",
+      href: "#",
+      badges: ["Internship"],
       description:
-        "Developed backend components using Java and JDBC. Built modules for dynamic data processing and contributed to the testing phase of production systems.",
+        "Built ERP applications using React.js and Node.js to enhance business process efficiency by 15%. Developed a Retail Store Management System and collaborated in Agile sprints with functional database integrations.",
     },
     {
-      company: "KKR Robotics",
-      href: "https://kkrrobotics.com/",
-      badges: ["Internship"],
+      company: "DLK Technologies Pvt Ltd",
+      title: "Java Developer Intern",
       location: "Chennai",
-      title: "Web Developer Intern",
-      logoUrl: "/kkr.png",
-      start: "May 2023",
-      end: "June 2023",
+      start: "Nov 2023",
+      end: "Dec 2023",
+      logoUrl: "/dlk.png",
+      href: "#",
+      badges: ["Internship"],
       description:
-        "Designed and implemented responsive web interfaces using React.js and Bootstrap. Worked closely with hardware engineers to develop dashboards for robotic components.",
+        "Developed Java features, integrated RESTful APIs, improved performance by 25%, and reduced bugs by 20%. Gained experience in Spring, Hibernate, MySQL, and Agile practices.",
     },
   ],
 
   education: [
     {
       school: "Chennai Institute of Technology",
-      href: "https://www.citchennai.edu.in/",
       degree: "B.E. in Computer Science and Engineering",
       logoUrl: "/cit.png",
+      href: "https://citchennai.edu.in",
       start: "2022",
       end: "2026",
-    },
-    {
-      school: "XYZ Higher Secondary School",
-      href: "#",
-      degree: "HSC - Computer Science",
-      logoUrl: "/school.png",
-      start: "2020",
-      end: "2022",
     },
   ],
 
   projects: [
     {
-      title: "Crime Detection using YOLO v3",
+      title: "WealthBridge – Investment Management Website",
       href: "#",
-      dates: "March 2024",
+      dates: "Nov 2024",
       active: true,
       description:
-        "An AI-powered crime detection system using YOLO v3 and OpenCV to recognize violent behavior and trigger alerts.",
-      technologies: ["Python", "YOLO v3", "OpenCV"],
-      links: [],
-      image: "",
-      video: "",
+        "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
+      technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
     },
     {
-      title: "E-commerce Website",
-      href: "#",
-      dates: "January 2024",
-      active: true,
-      description:
-        "Full-stack e-commerce site built with React, Node.js, Express, and MySQL featuring cart, product listings, and admin control.",
-      technologies: ["React", "Node.js", "Express", "MySQL"],
-      links: [],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Visitor Management System",
+      title: "Hotel Management System",
       href: "#",
       dates: "May 2024",
       active: true,
       description:
-        "Web-based visitor tracking app with separate admin login, dashboard view, and MySQL integration.",
-      technologies: ["React", "Node.js", "Express", "MySQL"],
-      links: [],
-      image: "",
-      video: "",
+        "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
+      technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
     },
     {
-      title: "Smart Parking System",
+      title: "StockPulse – AI Investment Dashboard",
       href: "#",
       dates: "Feb 2024",
       active: true,
       description:
-        "An IoT project using Raspberry Pi and Python to detect and display available parking slots with real-time updates.",
-      technologies: ["Python", "Raspberry Pi", "IR Sensors"],
-      links: [],
-      image: "",
-      video: "",
+        "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
+      technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
     },
   ],
 
-  hackathons: [], // Add if you participate in any
+  certifications: [
+    "AWS Cloud Practitioner – Amazon",
+    "Fundamentals of Cybersecurity – Zscaler",
+    "Full Stack Data Scientist – Udemy",
+    "CCNA – Cisco",
+    "Machine Learning with Python – IBM (Coursera)",
+    "Large Language Models – NPTEL"
+  ],
+
+  achievements: [
+    "LeetCode Contest Rank: 1630+ with 750+ problems solved",
+    "Secretary – IEEE Computer Society, organized and led technical initiatives",
+    "Event organizer – National-level Technical Symposium",
+    "Led cultural and technical exchange programs in college"
+  ],
+
+  hackathons: [], // Add if needed
 
 } as const;
