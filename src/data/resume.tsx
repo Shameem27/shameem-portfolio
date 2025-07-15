@@ -1,14 +1,14 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { ReactNode } from "react";
 
 export const DATA = {
   name: "S Shameem Mohamed",
   initials: "S",
-  url: "https://shameem.vercel.app", // Replace with your custom domain later
+  url: "https://shameem.vercel.app",
   location: "Chennai, Tamil Nadu",
   locationLink: "https://www.google.com/maps/place/Chennai,+Tamil+Nadu",
-  description:
-    "Final-year Computer Science student | Full Stack Developer | Problem Solver",
+  description: "Final-year Computer Science student | Full Stack Developer | Problem Solver",
   summary:
     "I am a final-year Computer Science Engineering student at Chennai Institute of Technology with hands-on experience in building full-stack applications, solving 750+ LeetCode problems, and leading technical communities. I’ve completed multiple internships, built production-ready projects, and earned certifications from AWS, IBM, Cisco, and more.",
   avatarUrl: "/me.png",
@@ -101,44 +101,55 @@ export const DATA = {
   ],
 
   projects: [
-  {
-    title: "WealthBridge – Investment Management Website",
-    href: "#",
-    dates: "Nov 2024",
-    active: true,
-    description:
-      "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
-    technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
-    image: "", // Empty string placeholder
-    video: "", // Empty string placeholder
-    links: [],
-  },
-  {
-    title: "Hotel Management System",
-    href: "#",
-    dates: "May 2024",
-    active: true,
-    description:
-      "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
-    technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
-    image: "",
-    video: "",
-    links: [],
-  },
-  {
-    title: "StockPulse – AI Investment Dashboard",
-    href: "#",
-    dates: "Feb 2024",
-    active: true,
-    description:
-      "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
-    technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
-    image: "",
-    video: "",
-    links: [],
-  },
-],
-
+    {
+      title: "WealthBridge – Investment Management Website",
+      href: "#",
+      dates: "Nov 2024",
+      active: true,
+      description:
+        "End-to-end investment platform with user auth, real-time portfolio tracking, RBAC, and live market data using React, Node, MySQL.",
+      technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
+      image: "",
+      video: "",
+      links: [] as {
+        icon: ReactNode;
+        title: string;
+        href: string;
+      }[],
+    },
+    {
+      title: "Hotel Management System",
+      href: "#",
+      dates: "May 2024",
+      active: true,
+      description:
+        "Booking system built using Flask, HTML, JS, and SQL. Optimized data access for 100+ records, reducing retrieval time by 40%.",
+      technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
+      image: "",
+      video: "",
+      links: [] as {
+        icon: ReactNode;
+        title: string;
+        href: string;
+      }[],
+    },
+    {
+      title: "StockPulse – AI Investment Dashboard",
+      href: "#",
+      dates: "Feb 2024",
+      active: true,
+      description:
+        "Real-time stock analysis dashboard with ML-based price predictions using React, Express, and Scikit-learn.",
+      technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
+      image: "",
+      video: "",
+      links: [] as {
+        icon: ReactNode;
+        title: string;
+        href: string;
+      }[],
+    },
+  ],
 
   certifications: [
     "AWS Cloud Practitioner – Amazon",
@@ -166,7 +177,11 @@ export const DATA = {
     technologies: string[];
     image: string;
     video: string;
-    links: string[];
-  }[], // Add if needed
+    links: {
+      icon: ReactNode;
+      title: string;
+      href: string;
+    }[];
+  }[],
 
 } as const;
