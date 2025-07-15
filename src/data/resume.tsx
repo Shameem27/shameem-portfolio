@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ReactNode } from "react";
 
 export const DATA = {
   name: "S Shameem Mohamed",
@@ -8,7 +7,8 @@ export const DATA = {
   url: "https://shameem.vercel.app",
   location: "Chennai, Tamil Nadu",
   locationLink: "https://www.google.com/maps/place/Chennai,+Tamil+Nadu",
-  description: "Final-year Computer Science student | Full Stack Developer | Problem Solver",
+  description:
+    "Final-year Computer Science student | Full Stack Developer | Problem Solver",
   summary:
     "I am a final-year Computer Science Engineering student at Chennai Institute of Technology with hands-on experience in building full-stack applications, solving 750+ LeetCode problems, and leading technical communities. I’ve completed multiple internships, built production-ready projects, and earned certifications from AWS, IBM, Cisco, and more.",
   avatarUrl: "/me.png",
@@ -111,11 +111,10 @@ export const DATA = {
       technologies: ["React.js", "Node.js", "MySQL", "Context API", "Axios"],
       image: "",
       video: "",
-      links: [] as {
-        icon: ReactNode;
-        title: string;
-        href: string;
-      }[],
+      links: [
+        { icon: Icons.github, type: "GitHub", href: "#" },
+        { icon: Icons.external, type: "Live Demo", href: "#" },
+      ],
     },
     {
       title: "Hotel Management System",
@@ -127,11 +126,9 @@ export const DATA = {
       technologies: ["Flask", "HTML/CSS", "JavaScript", "SQL"],
       image: "",
       video: "",
-      links: [] as {
-        icon: ReactNode;
-        title: string;
-        href: string;
-      }[],
+      links: [
+        { icon: Icons.github, type: "GitHub", href: "#" },
+      ],
     },
     {
       title: "StockPulse – AI Investment Dashboard",
@@ -143,11 +140,9 @@ export const DATA = {
       technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Scikit-learn"],
       image: "",
       video: "",
-      links: [] as {
-        icon: ReactNode;
-        title: string;
-        href: string;
-      }[],
+      links: [
+        { icon: Icons.github, type: "GitHub", href: "#" },
+      ],
     },
   ],
 
@@ -178,8 +173,8 @@ export const DATA = {
     image: string;
     video: string;
     links: {
-      icon: ReactNode;
-      title: string;
+      icon: React.ReactNode;
+      type: string;
       href: string;
     }[];
   }[],
